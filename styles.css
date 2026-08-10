@@ -185,10 +185,14 @@ table tr:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  padding: 8px 12px;
 }
 
-.product-list-item h3,
+.product-list-item h3 {
+  margin: 0;
+}
+
 .product-list-item p {
   margin: 0;
+  text-align: right;
 }
