@@ -197,6 +197,12 @@ table tr:hover {
     text-align: right;
     font-size: 14px;
 }
+
+#products .product-list-item i {
+    margin-left: 10px;
+    color: #ff6b6b;
+}
+
 button{
     border: none;
     background: none;
