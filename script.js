@@ -20,9 +20,24 @@ function addStock() {
         return;
     }
 
+const tableBody = document.getElementById("inventoryTableBody")
 
-console.log("Product:", product);
-console.log("Quantity:", quantity);
+const date = new Date().toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric"
+});
+
+const row = document.createElement("tr");
+
+  row.innerHTML = `
+    <td>${product}</td>
+    <td>Stock In</td>
+    <td>+${quantity} Pcs</td>
+    <td>${date}</td>
+  `;
+
+ tableBody.appendChild(row);
 
  closeStockModal();
 
