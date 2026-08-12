@@ -224,7 +224,7 @@ button{
     gap: 10px;
 }
 
-.add-stock-btn {
+.add-stock-btn, .add-product-btn {
     background-color: #ff6b6b;
     color: #fff;
     padding: 10px 20px;
