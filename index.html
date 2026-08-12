@@ -33,7 +33,7 @@
         <h2>Inventory</h2>
         <p>Our inventory system provides a user-friendly interface to track and manage your products.</p>
         
-        <button class="add-stock-btn"><i class="fas fa-plus"></i> Add Stock</button>
+        <button class="add-stock-btn" onclick="openStockModal()"><i class="fas fa-plus"></i> Add Stock</button>
           
         <div class="inventory-records">
            <table>
@@ -65,9 +65,9 @@
          </table>
        </div>
 
-       <div id="addStockModal" class="modal">
+       <div id="stockModal" class="modal">
         <div class="modal-content">
-          <span class="close">&times;</span>
+          <span class="close" onclick="closeStockModal()">&times;</span>
           
           <h3>Add Stock</h3>
 
@@ -156,6 +156,8 @@
     <footer>
         <p>&copy; 2024 Simple Inventory System. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
