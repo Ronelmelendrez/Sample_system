@@ -273,3 +273,20 @@ button{
     font-size: 24px;
     cursor: pointer;
 }
+.modal h3{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.modal label{
+    font-size: 14px;
+    text-align: left;
+}
+.modal input, .modal select{
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.modal .save-stock-btn{
+    background-color: #ff6b6b;
+    color: #fff;
+}
