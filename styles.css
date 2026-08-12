@@ -293,3 +293,6 @@ button{
 .modal .save-stock-btn:hover{
     background-color: #ff4c4c;
 }
+.modal .close:hover{
+    color: #ff4c4c;
+}
