@@ -33,16 +33,7 @@
         <h2>Inventory</h2>
         <p>Our inventory system provides a user-friendly interface to track and manage your products.</p>
         
-        <div class="inventory-container">
-            <div class="add-stock">
-                <h3>Add Stock</h3>
-                <form>
-                    <input type="text" placeholder="Product Name">
-                    <input type="number" placeholder="Quantity">
-                    <button type="submit">Add Stock</button>
-                </form>
-            </div>
-        </div>
+        <button class="add-stock-btn"><i class="fas fa-plus"></i> Add Stock</button>
           
         <div class="inventory-records">
            <table>
@@ -73,6 +64,28 @@
             </tbody>
          </table>
        </div>
+
+       <div class="add-stock-modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          
+          <h3>Add Stock</h3>
+
+          <label for="productSelect">Product</label>
+          <select id="productSelect">
+            <option value="">Select Product</option>
+            <option value="product1">Product 1</option>
+            <option value="product2">Product 2</option>
+            <option value="product3">Product 3</option>
+          </select>
+
+          <label for="stockQuantity">Quantity</label>
+          <input type="number" id="stockQuantity" min="1" placeholder="Enter quantity">
+
+          <button id="addStockButton">Add Stock</button>
+        </div>
+       </div>
+
     </section>
 
     <section id="products">

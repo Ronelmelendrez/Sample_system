@@ -169,8 +169,12 @@ table{
 table th,
 table td {
     padding: 12px 16px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;                                  
+    text-align: left;                                 
+}
+table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
 }
 #products table tr {
     background-color: #f2f2f2;
@@ -218,4 +222,14 @@ button{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.add-stock-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 80%;
 }
