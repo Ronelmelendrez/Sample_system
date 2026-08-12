@@ -267,3 +267,9 @@ button{
   border-radius: 8px;
   cursor: pointer;
 }
+.close{
+    position: absolute;
+    margin-left: 160px;
+    font-size: 24px;
+    cursor: pointer;
+}
