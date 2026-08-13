@@ -2,8 +2,16 @@ function openStockModal() {
     document.getElementById('stockModal').style.display = 'flex';
 }
 
+function openProductModal(){
+    document.getElementById('productModal').style.display = 'flex';
+}
+
 function closeStockModal() {
     document.getElementById('stockModal').style.display = 'none';
+}
+
+function closeProductModal(){
+    document.getElementById('productModal').style.display = 'none';
 }
 
 function addStock() {
