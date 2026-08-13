@@ -52,3 +52,52 @@ const row = document.createElement("tr");
  document.getElementById('productSelect').value = '';
  document.getElementById('stockQuantity').value = '';
 }
+
+
+
+function addProduct(){
+
+    const productName = document.getElementById('productName').value.trim();
+    const productPrice = document.getElementById('productPrice').value;
+    const productUnit = document.getElementById('productUnit').value;
+
+    if(!productName){
+        alert('Please enter a product name.');
+        return;
+    }
+
+    if(!productPrice || productPrice <= 0){
+        alert('Please enter a valid price.');
+        return;
+    }
+
+    if(!productUnit){
+        alert('Please select a product unit.');
+    }
+
+    const productsContainer = document.getElementById('productsContainer');
+
+    const productItem = document.createElement('div');
+    
+    productItem.className = 'product-item';
+
+    productItem.innerHTML = `
+      <div class="product-card">
+        <h3>${productName}</h3>
+
+        <h2>
+          <span>0</span> ${productUnit}
+        </h2>
+
+        <p>On hand</p>
+    </div>
+    `;
+
+    productsContainer.appendChild(productItem);
+
+
+
+    document.getElementById("productName").value = "";
+    document.getElementById("productPrice").value = "";
+    document.getElementById("productUnit").value = "";
+}
