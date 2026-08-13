@@ -96,6 +96,43 @@ function addProduct(){
     productsContainer.appendChild(productItem);
 
 
+    const productListBody = document.getElementById('productListBody');
+
+    const row = document.createElement('tr');
+
+    row.innerHTML = `
+    <td>
+      <div class="product-list-item">
+
+        <h3>${productName}</h3>
+
+        <div class="product-list-details">
+
+          <p>₱${Number(productPrice).toFixed(2)}</p>
+
+          <button
+            class="actions-button"
+            onclick="editProduct(this)"
+          >
+            <i class="fas fa-edit"></i>
+          </button>
+
+          <button
+            class="actions-button"
+            onclick="deleteProduct(this)"
+          >
+            <i class="fas fa-trash"></i>
+          </button>
+
+        </div>
+
+      </div>
+    </td>
+  `;
+
+    productListBody.appendChild(row);
+
+    closeProductModal();
 
     document.getElementById("productName").value = "";
     document.getElementById("productPrice").value = "";
