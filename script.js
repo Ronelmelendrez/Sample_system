@@ -14,6 +14,13 @@ function closeProductModal(){
     document.getElementById('productModal').style.display = 'none';
 }
 
+function deleteProduct(button){
+    const row = button.closest("tr");
+
+     if (confirm("Are you sure you want to delete this product?")) {
+    row.remove();
+    }
+}
 function addStock() {
     const product = document.getElementById('productSelect').value;
     const quantity = document.getElementById('stockQuantity').value;
