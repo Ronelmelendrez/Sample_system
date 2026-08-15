@@ -14,13 +14,36 @@ function closeProductModal(){
     document.getElementById('productModal').style.display = 'none';
 }
 
-function deleteProduct(button){
+function deleteProduct(button, productId){
     const row = button.closest("tr");
+    const productItem = document.getElementById('productId');
 
      if (confirm("Are you sure you want to delete this product?")) {
-    row.remove();
+     row.remove();
+  
+       if(productItem){
+          productItem.remove();
+       }
+     }
+}function deleteProduct(button, productId) {
+
+    if (!confirm("Are you sure you want to delete this product?")) {
+        return;
+    }
+
+    const row = button.closest("tr");
+
+    if (row) {
+        row.remove();
+    }
+
+    const productItem = document.getElementById(productId);
+
+    if (productItem) {
+        productItem.remove();
     }
 }
+
 function addStock() {
     const product = document.getElementById('productSelect').value;
     const quantity = document.getElementById('stockQuantity').value;
@@ -68,6 +91,8 @@ function addProduct(){
     const productPrice = document.getElementById('productPrice').value;
     const productUnit = document.getElementById('productUnit').value;
 
+    const productId = "product-" + Date.now();
+
     if(!productName){
         alert('Please enter a product name.');
         return;
@@ -87,6 +112,7 @@ function addProduct(){
     const productItem = document.createElement('div');
     
     productItem.className = 'product-item';
+    productItem.id = productId;
 
     productItem.innerHTML = `
       <div class="product-card">
@@ -107,6 +133,8 @@ function addProduct(){
 
     const row = document.createElement('tr');
 
+    row.id = `${productId}-row`;
+
     row.innerHTML = `
     <td>
       <div class="product-list-item">
@@ -126,7 +154,7 @@ function addProduct(){
 
           <button
             class="actions-button"
-            onclick="deleteProduct(this)"
+            onclick="deleteProduct(this, '${productId}')"
           >
             <i class="fas fa-trash"></i>
           </button>
