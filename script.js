@@ -25,6 +25,7 @@ function deleteProduct(button, productId){
           productItem.remove();
        }
      }
+     
 }function deleteProduct(button, productId) {
 
     if (!confirm("Are you sure you want to delete this product?")) {
