@@ -118,36 +118,28 @@
 
         <table class="product-list-table">
          <tbody id="productListBody">
-          <td>
-      <div class="product-list-item">
+              <td>
+                  <div class="product-list-item">
+                  <!-- Products records will be dynamically added here -->
 
-        <!-- Products records will be dynamically added here -->
+                  <!-- Static data -->
+                         <h3>Oil</h3>
 
-        <!-- Static data -->
-        <h3>Oil</h3>
+                        <div class="product-list-details">
 
-        <div class="product-list-details">
+                           <p>₱300</p>
 
-          <p>₱300</p>
+                          <button class="actions-button" onclick="editProduct(this)">
+                            <i class="fas fa-edit"></i>
+                          </button>
 
-          <button
-            class="actions-button"
-            onclick="editProduct(this)"
-          >
-            <i class="fas fa-edit"></i>
-          </button>
+                          <button class="actions-button" onclick="deleteProduct(this, '${productId}')">
+                            <i class="fas fa-trash"></i>
+                          </button>
 
-          <button
-            class="actions-button"
-            onclick="deleteProduct(this, '${productId}')"
-          >
-            <i class="fas fa-trash"></i>
-          </button>
-
-        </div>
-
-      </div>
-    </td>
+                        </div>
+                   </div>
+                </td>
           </tbody>
         </table>
 
