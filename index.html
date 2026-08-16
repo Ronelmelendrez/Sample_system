@@ -83,11 +83,43 @@
 
         <div class="products-container" id="productsContainer">
             <div class="product-item" id="productId">
+              <div class="product-card">
+                 <h3>Oil</h3>
+                 <h2><span>58</span> Pcs</h2>
+                 <p>On hand</p>
+              </div>
             </div>
         </div>
 
         <table class="product-list-table">
          <tbody id="productListBody">
+          <td>
+      <div class="product-list-item">
+
+        <h3>Oil</h3>
+
+        <div class="product-list-details">
+
+          <p>₱300</p>
+
+          <button
+            class="actions-button"
+            onclick="editProduct(this)"
+          >
+            <i class="fas fa-edit"></i>
+          </button>
+
+          <button
+            class="actions-button"
+            onclick="deleteProduct(this, '${productId}')"
+          >
+            <i class="fas fa-trash"></i>
+          </button>
+
+        </div>
+
+      </div>
+    </td>
           </tbody>
         </table>
 
@@ -129,9 +161,9 @@
 
     </section>
 
-    <section id="counting">
-        <h2>Counting</h2>
-        <p>Use this section to perform inventory counting and updates.</p>
+    <section id="stock-movements">
+        <h2>Stock Movements</h2>
+        <p>Track all changes made to your inventory.</p>
     </section>
 
     <footer>
