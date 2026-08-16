@@ -74,6 +74,17 @@ section{
 #home p{
     font-size: 18px;
     color: #555;
+    margin-bottom: 50px;
+}
+
+.home-btn{
+    padding: 12px 24px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6b6b;
+     transition: background-color 0.3s ease;
 }
 
 #inventory{
