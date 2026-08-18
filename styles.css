@@ -73,9 +73,9 @@ section{
     color: #fff;
 }
 #home p{
-    font-size: 18px;
+    font-size: 15px;
     color: #fff;
-    margin-bottom: 50px;
+    margin-bottom: 2px;
 }
 
 .home-btn{
@@ -101,6 +101,94 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+.home-content{
+    max-width: 640px;
+}
+.home-badge { 
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    font-size: 14px;
+}
+.home h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.home h1 span {
+    display: block;
+}
+
+.home-content > p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.home-btn {
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 8px;
+}
+
+.home-btn.secondary {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+}
+
+.home-features {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-top: 40px;
+}
+
+.home-feature {
+    border-radius: 12px;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+}
+.home-feature > i {
+    font-size: 22px;
+    min-width: 25px;
+}
+
+.home-feature h3 {
+    margin: 0 0 30px;
+}
+
+.home-feature p {
+    margin: 0;
+    opacity: 0.8;
+    font-size: 2px;
 }
 #inventory{
     text-align: center;
@@ -286,18 +374,16 @@ button{
     box-sizing: border-box;
 }
 .save-stock-btn {
-  width: 100%;
-  margin-top: 20px;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 .close{
     position: absolute;
     margin-left: 160px;
-    font-size: 24px;
-    cursor: pointer;
 }
 .modal h3{
     text-align: left;
